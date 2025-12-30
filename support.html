@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyFunds | Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>EasyFunds</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="accounts.html">Accounts</a>
+        <a href="loans.html">Loans</a>
+        <a href="support.html">Support</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h3>Customer Support</h3>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="4" placeholder="Describe your issue" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="supportStatus"></p>
+    </div>
+</div>
+
+<footer>
+    © 2025 EasyFunds Bank. All rights reserved.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

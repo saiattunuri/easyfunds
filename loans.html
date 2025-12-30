@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyFunds | Loans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>EasyFunds</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="accounts.html">Accounts</a>
+        <a href="loans.html">Loans</a>
+        <a href="support.html">Support</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h3>Loan Application</h3>
+        <form onsubmit="applyLoan(event)">
+            <input type="text" placeholder="Full Name" required>
+            <select required>
+                <option value="">Select Loan Type</option>
+                <option>Home Loan</option>
+                <option>Personal Loan</option>
+                <option>Education Loan</option>
+            </select>
+            <input type="number" placeholder="Loan Amount" required>
+            <button type="submit">Apply for Loan</button>
+        </form>
+        <p id="loanStatus"></p>
+    </div>
+</div>
+
+<footer>
+    © 2025 EasyFunds Bank. All rights reserved.
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
