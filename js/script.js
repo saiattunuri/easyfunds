@@ -9,3 +9,7 @@ function sendMessage(event) {
     document.getElementById("supportStatus").innerText =
         "Thank you for contacting EasyFunds support.";
 }
+
+function openLauncher() {
+  Genesys("command", "Launcher.show");
+}
