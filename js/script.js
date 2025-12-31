@@ -11,7 +11,21 @@ function sendMessage(event) {
 }
 
 function openLauncher() {
-  Genesys("command", "Launcher.show");
+  //Genesys("command", "Launcher.show");
+   Genesys(
+    'command',
+    'Messenger.open',
+    {},
+    () => {
+     /*fulfilled callback*/
+     console.log('Messenger opened');
+    },
+    (error) => {
+     /*rejected callback*/
+     console.log("Couldn't open messenger.", error);
+    }
+  );
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
