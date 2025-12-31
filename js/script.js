@@ -13,3 +13,10 @@ function sendMessage(event) {
 function openLauncher() {
   Genesys("command", "Launcher.show");
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  var btn = document.getElementById('chatLauncherBtn');
+  if (btn) {
+    btn.addEventListener('click', openLauncher);
+  }
+});
